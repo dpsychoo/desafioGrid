@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.masterContainer{
+    display: grid;
+    grid-template-areas: 
+        "navbar navbar"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: repeat(auto fill, minmax(350px, 1fr));
+    grid-template-rows: 65px 1fr 4rem;
+}
+
+.navbar{
+    grid-area: navbar;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 65px;
+    background-color: rgb(68, 34, 255);
+    color: white;
+    text-align: center;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    padding: 0 24px;
+    background-color: rgb(34, 29, 44);
+}
+
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+}
+
+.sidebar ul li{
+    list-style: none;
+}
+
+.main{
+    grid-area: main;
+    padding: 15px;
+    background-color: rgb(64, 59, 71);
+}
+
+h2{
+    margin: 1rem 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+h3{
+    font-size: 1.5rem;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+a{
+    color: rgb(216, 173, 255);
+}
+
+p{
+    color: white;
+    margin: 0 0 1rem 0;
+}
+
+.stock{
+    color: gray;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    min-height: 6.25em;
+    text-align: center;
+    background-color: rgb(24, 22, 26);
+}
+
+.producto .btn{
+    background-color: rgb(68, 34, 255);
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.producto img{
+    margin: 0.5rem;
+    max-width: 100%;
+    flex-grow: 1;
+}
+
+.grilla-productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.footer{
+    grid-area: footer;
+    font-weight: bold;
+    background-color: rgb(152, 145, 209);
+    text-align: center;
+    line-height: 65px;
+}
